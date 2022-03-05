@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería ChemCakes</title>
+</head>
+<style>
+    nav {
+  float: left;
+  width: 30%;
+  height: 765px;
+  background:burlywood;
+  padding: 20px;
+}
+    header {
+  background-color:coral;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+footer {
+  background-color:coral;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+</style>
+<body>
+    <header><img src="images/Logo panaderia.JPG" alt="logo ChemCakes" width="75" height="75"><h1>Pastelería ChemCakes</h1>
+    <p>Where Bakery meets Chemistry</p>
+    </header>   
+        <nav>
+        <h2>Nuestros sabores</h2>
+        <p>El precio es por pastel completo incluyendo relleno y adornos. 
+        Los sabores se pueden combinar y el precio se ajusta de acuerdo a la proporción.</p>
+                <dl>
+                <dt>Felicidad............$270</dt>            
+                <dd>Bizcocho sabor chocolate</dd>
+                <dt>Clásico.............$270</dt>
+                <dd>Bizcocho sabor vainilla</dd>
+                <dt>Pasión..............$350</dt>
+                <dd>Bizcocho sabor red velvet</dd>
+                <dt>Frutilla............$270</dt>
+                <dd>Bizcocho sabor fresa</dd>
+                <dt>Refrescante.........$300</dt>
+                <dd>Bizcocho sabor limón</dd>
+                <dt>Cafeína.............$350</dt>
+                <dd>Bizcocho sabor moka</dd>
+                <dt>Terror..............$300</dt>
+                <dd>Bizcocho sabor calabaza</dd>
+                <dt>Verano..............$300</dt>
+                <dd>Bizcocho sabor naranja</dd>
+            </dl>
+        
+        <h2>Rellenos disponibles</h2>
+        <ul>
+            <li>Crema</li>
+            <li>Ganache de chocolate</li>
+            <li>Chantilly</li>
+            <li>Dulce de leche</li>
+            <li>Mermelada</li>
+            <li>Mezcla de frutas</li>
+        </ul>
+        <h2>Nuestros adornos</h2>
+        <ul>
+            <li>Buttercream</li>
+            <li>Chantilly con frutas</li>
+            <li>Ganache</li>
+            <li>Merengue</li>
+            <li>Fondant</li>
+        </ul>
+        </nav>
+    <br>
+    <form >
+        <h2>Arma tu pastel</h2>
+        <label for="Name">Ingresa tu nombre:</label>
+        <input type="text" id="Name" name="Name" required>
+        <br>
+        <label for="Telephone">Ingresa tu número de teléfono:</label>
+        <input type="tel" name="Telephone" id="Telephone" maxlength="10" size="10" required>
+        <br>
+        <label for="email">Ingresa tu correo electrónico:</label>
+        <input type="email" name="email" id="email">
+        <ol>
+            <li>Selecciona el sabor del bizcocho (Puedes escoger varios)</li>
+                <dd>   
+                <input type="checkbox" id="Chocolate" name="Sabores" value="Chocolate">
+                <label for="Chocolate">Chocolate</label>
+                <br>
+                
+                <input type="checkbox" id="Vainilla" name="Sabores" value="Vainilla">
+                <label for="Vainilla">Vainilla</label>
+                <br>
+                
+                <input type="checkbox" id="Red Velvet" name="Sabores" value="Red Velvet">
+                <label for="Red Velvet">Red Velvet</label>
+                <br>
+                
+                <input type="checkbox" id="Fresa" name="Sabores" value="Fresa">
+                <label for="Fresa">Fresa</label>
+                <br>
+                
+                <input type="checkbox" id="Limón" name="Sabores" value="Limón">
+                <label for="Limón">Limón</label>
+                <br>
+        
+                <input type="checkbox" id="Moka" name="Sabores" value="Moka">
+                <label for="Moka">Moka</label>
+                <br>
+        
+                <input type="checkbox" id="Calabaza" name="Sabores" value="Calabaza">
+                <label for="Calabaza">Calabaza</label>
+                <br>
+        
+                <input type="checkbox" id="Naranja" name="Sabores" value="Naranja">
+                <label for="Naranja">Naranja</label></dd> 
+            <li>Elige el relleno</li>
+                <dd> 
+                <input type="radio" id="Crema" name="Rellenos" value="Crema">
+                <label for="Crema">Crema</label>
+                <input type="radio" id="Ganache" name="Rellenos" value="Ganache de chocolate">
+                <label for="Ganache">Ganache de chocolate</label>
+                <input type="radio" id="Chantilly" name="Rellenos" value="Chantilly">
+                <label for="Chantilly">Chantilly</label>
+                <input type="radio" id="Dulce de leche" name="Rellenos" value="Dulce de leche">
+                <label for="Dulce de leche">Dulce de leche</label>
+                <input type="radio" id="Mermelada" name="Rellenos"  value="Mermelada">
+                <label for="Mermelada">Mermelada</label>
+                <input type="radio" id="Frutas" name="Rellenos" value="Frutas">
+                <label for="Frutas">Fruta</label></dd>
+            <li>Finalmente, selecciona los adornos</li>
+                <dd>   
+                <input type="checkbox" id="Buttercream" name="Adornos" value="Buttercream">
+                <label for="Buttercream">Buttercream</label>
+                <br>
+                
+                <input type="checkbox" id="Chantilly con frutas" name="Adornos" value="Chantilly con frutas">
+                <label for="Chantilly con frutas">Chantilly con frutas</label>
+                <br>
+                
+                <input type="checkbox" id="Ganache" name="Adornos" value="Ganache">
+                <label for="Ganache">Ganache</label>
+                <br>
+                
+                <input type="checkbox" id="Merengue" name="Adornos" value="Merengue">
+                <label for="Merengue">Merengue</label>
+                <br>
+                
+                <input type="checkbox" id="Fondant" name="Adornos" value="Fondant">
+                <label for="Fondant">Fondant</label></dd>
+            <li>¿Algún comentario o detalle sobre tu pastel?</li>
+            <textarea name="message" rows="10" cols="30">
+                </textarea> 
+                
+        </ol>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reestablecer">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <h2>Pastelería ChemCakes</h2>
+        <h3>Av Principal #38</h3>
+        <h3>Teléfono: 5512345678</h3>
+        <h3>Horarios de atención: Lunes a Sábado 9:00 - 17:00</h3>
+    </footer>
+
+    
+</body>
